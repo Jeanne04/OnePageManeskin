@@ -87,6 +87,25 @@ table img{
     width: 20%;
 }
 
+/* Partie réseaux sociaux */
+
+.la-instagram{
+    font-size: 1.5rem;
+}
+.la-facebook{
+    font-size: 1.5rem;
+}
+.la-twitter{
+    font-size: 1.5rem;
+}
+.la-youtube{
+    font-size: 1.5rem;
+}
+.article4 a {
+    padding: 1rem;
+    color:   #154360  ;
+}
+
 /* Parti Carroussel*/
 .carroussel{
     width: 40%;
