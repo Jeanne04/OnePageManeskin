@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+/* Reset  */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #f2f3f4 ;
+}
+a{
+    text-decoration: none;
+}
+.header-s{
+    width: 100%;
+    color:   #ecf0f1  ;
+    background-color:  #2e4053 ;
+    padding-top: 1rem;
+}
+h1{
+    text-align: center;
+}
+nav{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color: #5d6d7e;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+nav li{
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    margin: 0.5rem;
+    color:   #ecf0f1  ;
+}
+nav a:hover {
+    color:    #5499c7   ;
+}
+main{
+    background-color:  #f2f3f4 ;
+    width: 100%;
+}
+section{
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+}
+article{
+    border-radius: 0.2em;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.article1 img{
+    width: 20%;
+    height: 30%;
+}
+img{
+    width: 40%;
+    height: 60%;
+}
+h2{
+    margin-bottom: 0.5rem;
+}
+h3{
+    margin: 0.5rem;
+}
+
+table{
+    margin: 0.7rem;
+    width: 100%;
+}
+table caption{
+    text-align: center;
+}
+table tr {
+    width: 50%;
+
+}
+
+table img{
+    width: 20%;
+}
+
+/* Parti Carroussel*/
+.carroussel{
+    width: 40%;
+    margin: auto;
+}
+.diapo{
+    position: relative;
+    overflow: hidden;
+
+}
+.elements{
+    display: flex;
+}
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+.element > iframe{
+    width: 100%;
+}
+.caption{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}
+
+footer{
+    background-color:  #2e4053 ;
+    color:   #ecf0f1  ;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/*Parti mobile*/
+
+@media (max-width: 375px) {
+    .carroussel{
+        width: 90%;
+    }
+    nav{
+        display: none;
+    }
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    section{
+        width: 90%;
+        margin: 0.4rem;
+        padding: 0.4rem;
+
+
+    }
+    .article1 img {
+        width: 10rem;
+    }
+    table{
+        margin: 0.2rem;
+    }
+    .article2 img{
+        width: 5rem;
+    }
+}
